@@ -9,17 +9,15 @@
 <!-- ref: worker-src blob: -->
 
 <!-- an offering for the jealous gods -->
-<meta property="og:site_name" content="The Oakland Follower-Sentinel">
-<meta property="og:url" content="https://oakfs.net/">
+<meta property="og:site_name" content="The Toronto Nugget">
+<meta property="og:url" content="https://nugget.kindrobot.ca/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Robin Sloan">
-<meta property="og:description" content="A Spring '83 client."/>
+<meta property="og:title" content="News That Nuggets">
+<meta property="og:description" content="A Spring '83 and RSS reader."/>
 <meta property="og:image" content="">
 <meta property="twitter:image" content="">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@robinsloan">
-<meta name="twitter:creator" content="@robinsloan">
-<meta name="twitter:title" content="The Oakland Follower-Sentinel">
+<meta name="twitter:title" content="The Toronto Nugget">
 
 <link rel="stylesheet" href="/style/style.css">
 <script src="/js/noble-ed25519.js"></script>
@@ -81,7 +79,12 @@
     <!-- Where the items actually live -->
     <item-banner>
       <h1><img src="/media/oakfs-banner.gif" alt="The Oakland Follower-Sentinel, printed in a newspaper-ish blackletter"></h1>
-      <h2>A demo client for <a href="https://www.robinsloan.com/lab/specifying-spring-83/">Spring &rsquo;83</a> boards and RSS feeds. <a href="https://github.com/robinsloan/follower-sentinel#basic-operation" target="_blank">You can read the manual.</a><br/><i>It might not work in your browser, and that's OK.</i><br/></h2>
+      <h2>
+          A <a href="https://www.robinsloan.com/lab/specifying-spring-83/">Spring &rsquo;83</a> and RSS reader.<br/>
+          <a href="https://github.com/robinsloan/follower-sentinel#basic-operation" target="_blank">manual</a> |
+          <a href="https://github.com/robinsloan">creator</a> |
+          <a href="https://followersentinel.com/">original</a>
+      </h2>
     </item-banner>
     <item-grid>
     </item-grid>
@@ -117,14 +120,14 @@
         <select id="home-server">
           <option value="https://bogbody.biz/">bogbody.biz</option>
           <option value="https://0l0.lol/">0l0.lol</option>
-          <option value="https://spring83.kindrobot.ca/">spring83.kindrobot.ca</option>
+          <option value="https://spring83.kindrobot.ca/" selected>spring83.kindrobot.ca</option>
         </select>
       </server-choice>
 
       <server-choice>
         <label for="backup-server">Backup server:</label>
         <select id="backup-server">
-          <!-- <option value="https://bogbody.biz/">bogbody.biz</option> -->
+          <option value="https://bogbody.biz/" selected>bogbody.biz</option>
           <option value="https://0l0.lol/">0l0.lol</option>
           <option value="https://spring83.kindrobot.ca/">spring83.kindrobot.ca</option>
           <option value="http://localhost:8787/">localhost</option>
