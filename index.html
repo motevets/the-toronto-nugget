@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>The Toronto Nugget</title>
+<title>The Windsor Firehose</title>
 <meta charset="utf-8">
 
 <!-- this rules -->
@@ -9,7 +9,7 @@
 <!-- ref: worker-src blob: -->
 
 <!-- an offering for the jealous gods -->
-<meta property="og:site_name" content="The Toronto Nugget">
+<meta property="og:site_name" content="The Windsor Firehose">
 <meta property="og:url" content="https://nugget.kindrobot.ca/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="News That Nuggets">
@@ -17,7 +17,7 @@
 <meta property="og:image" content="">
 <meta property="twitter:image" content="">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Toronto Nugget">
+<meta name="twitter:title" content="The Windsor Firehose">
 
 <link rel="stylesheet" href="/style/style.css">
 <script src="/js/noble-ed25519.js"></script>
@@ -30,12 +30,7 @@
 
 <body>
 
-<main>
-  <!-- Modal view for editing Springfile -->
-  <springfile-modal>
-    <textarea spellcheck="false"></textarea>
-  </springfile-modal>
-
+<main class="minimized">
   <preview-modal>
     <board-preview></board-preview>
   </preview-modal>
@@ -78,83 +73,14 @@
 
     <!-- Where the items actually live -->
     <item-banner>
-      <h1><img src="/media/oakfs-banner.gif" alt="The Toronto Nugget, printed in a newspaper-ish blackletter"></h1>
+      <h1><img src="/media/oakfs-banner.gif" alt="The Windsor Firehose, printed in a newspaper-ish blackletter"></h1>
       <h2>
-          A <a href="https://www.robinsloan.com/lab/specifying-spring-83/">Spring &rsquo;83</a> and RSS reader.<br/>
-          <a href="https://github.com/robinsloan/follower-sentinel#basic-operation" target="_blank">manual</a> |
-          <a href="https://github.com/robinsloan">creator</a> |
-          <a href="https://followersentinel.com/">original</a>
+          An index of all known <a href="https://www.robinsloan.com/lab/specifying-spring-83/">Spring &rsquo;83</a> boards on <a href="https://spring83.kindrobot.ca">spring83.kindrobot.ca</a>.
       </h2>
     </item-banner>
     <item-grid>
     </item-grid>
   </item-zone>
-
-  <editor-zone>
-    <drop-zone>
-      <p>Drag your keypair file here, or</p>
-      <label>choose a file
-        <input type="file" id="keypair-upload" style="position: absolute; top: -1000rem;">
-      </label>
-      <p>Need a keypair? <a href="/generate/">You can generate one.</a></p>
-    </drop-zone>
-
-    <p>Your board URL is:</p>
-
-    <input id="spring-url" type="text" readonly>
-
-    <p style="font-size: 1.0rem; line-height: 1.5rem;">Nobody will know about this board until you tell them! Feel free to email <i>editor@followersentinel.com</i> if you&rsquo;d like your URL included in the board directory.</p>
-
-    <p>Edit your board here. You can use Markdown.</p>
-    <editor-wrap>
-      <pre class="editor" id="editor"></pre>
-    </editor-wrap>
-
-    <byte-counter></byte-counter>
-
-    <publish-button>Publish</publish-button>
-
-    <server-zone>
-      <server-choice>
-        <label for="home-server">Home server:</label>
-        <select id="home-server">
-          <option value="https://bogbody.biz/">bogbody.biz</option>
-          <option value="https://0l0.lol/">0l0.lol</option>
-          <option value="https://spring83.kindrobot.ca/" selected>spring83.kindrobot.ca</option>
-          <option value="https://may83.club">may83.club</option>
-        </select>
-      </server-choice>
-
-      <server-choice>
-        <label for="backup-server">Backup server:</label>
-        <select id="backup-server">
-          <option value="https://bogbody.biz/" selected>bogbody.biz</option>
-          <option value="https://0l0.lol/">0l0.lol</option>
-          <option value="https://spring83.kindrobot.ca/">spring83.kindrobot.ca</option>
-          <option value="https://may83.club" selected>may83.club</option>
-          <option value="http://localhost:8787/">localhost:8787</option>
-          <option value="none">none</option>
-        </select>
-      </server-choice>
-    </server-zone>
-
-    <action-row>
-      <p>Springfile:</p>
-      <action-link class="action edit-springfile">edit</action-link>
-    </action-row>
-
-    <action-row>
-      <p>Keypair:</p>
-      <action-link class="action save-keypair">save</action-link>
-      <action-link class="action forget-keypair dangerous">forget</action-link>
-    </action-row>
-    <action-row>
-      <p>Client:</p>
-      <action-link class="action force-refresh">force refresh</action-link>
-      <action-link class="action factory-reset dangerous">factory reset</action-link>
-    </action-row>
-  </editor-zone>
-
 </main>
 </body>
 </html>
